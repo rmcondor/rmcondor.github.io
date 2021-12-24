@@ -10,4 +10,4 @@ location: "Lima, Peru"
 
 In this presentation I made as a undergraduate, I presented Georgescu-Roegen's academic life and theoretical contributions to bioeconomics, as a non-conventional approach in economic science.
 
-<img src="/images/heterodoxtalk.jpg" height="250">
+<img src='./images/heterodoxtalk.jpg'>
