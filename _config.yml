@@ -85,10 +85,9 @@ author:
   bio              : "Bachelor degree in Economics"
   location         : "Lima, Peru"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    :  # "http://yourfullgooglescholarurl.com" I will add later
+  email            :  rcondor.it15@gmail.com
+  researchgate     :  # "https://www.researchgate.net/profile/yourprofile" I will add later
   uri              :
   bitbucket        :
   codepen          :
@@ -102,7 +101,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/rmcondor/"
   orcid            : "https://orcid.org/0000-0002-2299-4566"
   pinterest        :
   soundcloud       :
@@ -113,7 +112,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/channel/UC60Dwn-4wNEXho3wajOa3QQ/videos"
   wikipedia        :
 
 
