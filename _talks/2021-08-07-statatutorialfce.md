@@ -8,7 +8,7 @@ date: 2021-08-07
 location: "Lima, Peru"
 ---
 
-This workshop lasted 4 hours and was attended by students from different universities of Peru.
+This workshop was intended for people with no prior knowledge of Stata. The objective was to teach the topics from the basics and culminate with a practical application: the famous Mincer equation.
 
 ## Outline
 * Introduction to Stata and working directories
