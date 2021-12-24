@@ -10,4 +10,8 @@ location: "Lima, Peru"
 
 This workshop lasted 4 hours and was attended by students from different universities of Peru.
 
-<br/><img src='/images/statatutorialfce.JPG'>
+## Topics
+* 
+
+
+<br/><img src='/images/statatutorialfce.jpg'>
