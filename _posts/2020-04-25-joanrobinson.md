@@ -1,5 +1,5 @@
 ---
-title: 'Joan Robinson and the teaching of economics'
+title: 'Joan Robinson and the teaching of Economics'
 date: 2020-04-25
 permalink: /posts/2020/jrobinson/
 tags:
