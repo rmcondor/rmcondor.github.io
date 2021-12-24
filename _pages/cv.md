@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-Universidad Nacional Mayor de San Marcos, Lima, Perú
+Universidad Nacional Mayor de San Marcos, Lima
 
 Experience
 ======
