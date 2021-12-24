@@ -22,3 +22,9 @@ Github repo: [here](https://github.com/rmcondor/Introductory-Stata-Course)
 
 
 <br/><img src='/images/statatutorialfce.jpg'>
+
+In addition, you can find a recording of the last practical session.
+
+<p aling = "center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hn38MlhR-OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
