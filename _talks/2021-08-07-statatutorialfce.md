@@ -1,5 +1,5 @@
 ---
-title: "Stata applied to the National Household Survey (ENAHO, in Spanish)"
+title: "Stata applied to the ENAHO"
 collection: talks
 type: "Talk"
 permalink: /talks/statatutorialfce
