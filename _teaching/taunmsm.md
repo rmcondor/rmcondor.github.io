@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate courses"
 permalink: /teaching/teaching-unmsm
 venue: "Universidad Nacional Mayor de San Marcos (UNMSM), Faculty of Economic Science"
-date: 2019 to 2020
+date: 2019-07-01
 location: "Lima, Peru"
 ---
 
