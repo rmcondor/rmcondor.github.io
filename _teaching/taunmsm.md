@@ -8,10 +8,6 @@ date: 2019-07-01
 location: "Lima, Peru"
 ---
 
-# Courses:
-## Econometrics I
-Responsible of practical sessions using Stata, designing tests, and grading.
-
-## Theories of Distribution and Inequality
-Responsible of talks and the design of exams.
-[See the Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
+## Courses:
+* Econometrics I
+*Theories of Distribution and Inequality: [See the Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
