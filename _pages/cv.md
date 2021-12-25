@@ -5,33 +5,9 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+paperurl: 'http://rmcondor.github.io/files/Ronny_Condor_CV.pdf'
 ---
 
-{% include base_path %}
-
-Education
-======
-Universidad Nacional Mayor de San Marcos, Lima
-
-Experience
-======
-
-  
-Teaching
-======
+paperurl: 'http://rmcondor.github.io/files/Ronny_Condor_CV.pdf'
 
 
-Academic activities
-======
-
-  
-Skills
-======
-
-
-Work in progress
-======
-
-  
-Complementary courses
-======
