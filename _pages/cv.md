@@ -10,5 +10,3 @@ paperurl: 'http://rmcondor.github.io/files/Ronny_Condor_CV.pdf'
 
 [Open my CV here (Updated on December 2021)](http://rmcondor.github.io/files/Ronny_Condor_CV.pdf)
 {% include base_path %}
-
-<iframe src='Ronny_Condor_CV.pdf' width="100%" height="500px">    </iframe>
