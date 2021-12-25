@@ -14,4 +14,4 @@ Responsible of practical sessions using Stata, designing tests, and grading.
 
 ## Theories of Distribution and Inequality
 Responsible of talks and the design of exams.
-[Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
+[See the Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
