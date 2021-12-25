@@ -10,4 +10,4 @@ location: "Lima, Peru"
 
 ## Courses:
 * Econometrics I
-*Theories of Distribution and Inequality: [See the Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
+* Theories of Distribution and Inequality: [See the Github repo](https://github.com/rmcondor/Theories-of-Distribution-and-Inequality-Course)
