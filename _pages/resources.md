@@ -16,7 +16,7 @@ author_profile: true
 {% endfor %}
 
 ## Programming language
-* **Maps in R**: I developed a guide where I show how to create maps in R. The guide use the National Household Survey of Peru and is currently in Spanish.
+* **Maps in R**: I developed a guide where I show how to create maps in R. The guide use the National Household Survey of Peru and is currently in Spanish. You can find the full guide [here](https://github.com/rmcondor/rmaps-peruvian-case)
 
 * **econresearchR package**: A useful R package for organizing files in economics applied research. You can see the instructions to install it [here](https://github.com/rmcondor/econresearchR).
 
