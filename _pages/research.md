@@ -17,5 +17,5 @@ author_profile: true
 
 ## Work in progress
 
-* Ethnic inequality: a look from Peruvian microdata (with Guiliana Campos)
-* The effect of trade openness on poverty and inequality in Peru: a micro-simulation analysis
+* Ethnicity in Peru and its multidimensional nature: a proposal for measurement (with Guiliana Campos)
+* The effect of trade openness on wage inequality: evidence from Peru
