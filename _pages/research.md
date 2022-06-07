@@ -15,7 +15,7 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-## Work in progress
+## Publications
+* Campos, G. y Condor, R. (2022). Ethnicity in Peru and its multidimensional nature: a proposal for measurement. Desde el Sur, 14(1), e00012 [Original in Spanish](https://revistas.cientifica.edu.pe/index.php/desdeelsur/article/view/1030/961)
 
-* Ethnicity in Peru and its multidimensional nature: a proposal for measurement (with Guiliana Campos)
-* The effect of trade openness on wage inequality: evidence from Peru
+## Work in progress
