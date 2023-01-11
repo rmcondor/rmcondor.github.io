@@ -3,7 +3,7 @@ locale                   : "en-US"
 title                    : "Ronny M. Condor"
 title_separator          : "-"
 name                     : &name "Ronny Condor"
-description              : &description "Bachelor degree in Economics"
+description              : &description "Peruvian economist"
 url                      : https://rmcondor.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rmcondor/rmcondor.github.io"
@@ -75,11 +75,11 @@ analytics:
 author:
   name             : "Ronny M. Condor"
   avatar           : "ronny_c.jpg"
-  bio              : "Bachelor degree in Economics"
+  bio              : "Peruvian economist"
   location         : "Cono Norte, Lima"
   employer         :
-  googlescholar    :  # "http://yourfullgooglescholarurl.com" I will add later
-  email            :  rcondor.it15@gmail.com
+  googlescholar    :  https://scholar.google.com/citations?user=ZwCnTRsAAAAJ&hl=es&authuser=1"
+  email            :  rmcondorit@gmail.com
   researchgate     :  # "https://www.researchgate.net/profile/yourprofile" I will add later
   uri              :
   bitbucket        :
