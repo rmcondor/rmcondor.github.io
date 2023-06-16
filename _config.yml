@@ -3,7 +3,7 @@ locale                   : "en-US"
 title                    : "Ronny M. Condor"
 title_separator          : "-"
 name                     : &name "Ronny Condor"
-description              : &description "Peruvian economist"
+description              : &description "Peruvian economist in La Argentina"
 url                      : https://rmcondor.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rmcondor/rmcondor.github.io"
@@ -76,7 +76,7 @@ author:
   name             : "Ronny M. Condor"
   avatar           : "ronny_c.jpg"
   bio              : "Peruvian economist"
-  location         : "Cono Norte, Lima"
+  location         : "Buenos Aires, Argentina"
   employer         :
   googlescholar    :  https://scholar.google.com/citations?user=ZwCnTRsAAAAJ&hl=es&authuser=1"
   email            :  rmcondorit@gmail.com
