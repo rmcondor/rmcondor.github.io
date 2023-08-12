@@ -4,8 +4,8 @@ collection: teaching
 type: "Undergraduate courses"
 permalink: /teaching/teaching-udesa
 venue: "Universidad de San Andrés, Department of Economics"
-date: 2019-07-01
-location: "Lima, Peru"
+date: 2023-08-01
+location: "Buenos Aires, Argentina"
 ---
 
 ## Course:
