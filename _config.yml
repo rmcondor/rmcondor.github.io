@@ -3,7 +3,7 @@ locale                   : "en-US"
 title                    : "Ronny M. Condor"
 title_separator          : "-"
 name                     : &name "Ronny Condor"
-description              : &description "Peruvian economist in La Argentina"
+description              : &description "Eternal learner and economist attempt"
 url                      : https://rmcondor.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rmcondor/rmcondor.github.io"
@@ -75,12 +75,12 @@ analytics:
 author:
   name             : "Ronny M. Condor"
   avatar           : "ronsky.jpg"
-  bio              : "Peruvian economist in La Argentina"
-  location         : "Buenos Aires, Argentina"
+  bio              : "Eternal learner and economist attempt"
+  location         : "Lima, Peru"
   employer         :
   googlescholar    :  https://scholar.google.com/citations?user=ZwCnTRsAAAAJ&hl=es&authuser=1"
   email            :  rmcondorit@gmail.com
-  researchgate     :  # "https://www.researchgate.net/profile/yourprofile" I will add later
+  researchgate     :  "https://www.researchgate.net/profile/Ronny-Condor"
   uri              :
   bitbucket        :
   codepen          :
