@@ -8,6 +8,6 @@ redirect_from:
 paperurl: 'http://rmcondor.github.io/files/Ronny_Condor_CV.pdf'
 ---
 
-[Open my CV here (Updated on January 2024)](http://rmcondor.github.io/files/Ronny_Condor_CV.pdf)
+[Open my CV here (Updated on May 2024)](http://rmcondor.github.io/files/Ronny_Condor_CV.pdf)
 {% include base_path %}
 
