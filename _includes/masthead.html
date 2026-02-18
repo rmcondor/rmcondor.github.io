@@ -3,22 +3,16 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <a class="site-logo" href="{{ base_path }}/">{{ site.title }}</a>
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+    <nav class="site-nav" id="site-nav">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        <a class="site-nav__link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle dark/light mode">&#9790;</button>
   </div>
 </div>

@@ -105,6 +105,54 @@
   }
 
   /* =============================================
+     Simple flat site nav (replaces greedy-nav)
+     ============================================= */
+  .site-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex: 1 !important;
+    flex-wrap: wrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .site-nav__link {
+    display: inline-block !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: color 0.15s ease !important;
+  }
+
+  .site-nav__link:hover {
+    color: var(--nav-hover) !important;
+    text-decoration: none !important;
+  }
+
+  /* =============================================
+     Plain, uniform typography — body-size headings
+     ============================================= */
+  h1, h2, h3, h4, h5, h6,
+  .page__title,
+  h1.page__title {
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin: 1.25em 0 0.4em !important;
+    color: var(--text) !important;
+  }
+
+  /* Section dividers on h2 within content */
+  .page__content h2 {
+    border-bottom: 1px solid var(--border) !important;
+    padding-bottom: 0.2em !important;
+  }
+
+  /* =============================================
      Masthead / Navigation
      ============================================= */
   .masthead {
