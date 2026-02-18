@@ -35,4 +35,591 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
+<!-- Theme initialization: runs immediately to avoid flash of wrong theme -->
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+<!-- Minimalist style overrides + dark/light mode variables -->
+<style>
+  /* =============================================
+     CSS Custom Properties
+     ============================================= */
+  :root {
+    --bg:         #ffffff;
+    --surface:    #f7f7f7;
+    --text:       #1c1c1c;
+    --text-muted: #6b7280;
+    --border:     #e5e7eb;
+    --link:       #1c1c1c;
+    --link-hover: #4b5563;
+    --nav-bg:     #ffffff;
+    --nav-text:   #374151;
+    --nav-hover:  #111827;
+    --footer-bg:  #f7f7f7;
+    --code-bg:    #f4f4f5;
+    --toggle-bg:  #e5e7eb;
+    --toggle-fg:  #374151;
+  }
+
+  [data-theme="dark"] {
+    --bg:         #111111;
+    --surface:    #1c1c1c;
+    --text:       #e5e7eb;
+    --text-muted: #9ca3af;
+    --border:     #2d2d2d;
+    --link:       #d1d5db;
+    --link-hover: #f9fafb;
+    --nav-bg:     #111111;
+    --nav-text:   #d1d5db;
+    --nav-hover:  #f9fafb;
+    --footer-bg:  #1c1c1c;
+    --code-bg:    #1e1e1e;
+    --toggle-bg:  #2d2d2d;
+    --toggle-fg:  #e5e7eb;
+  }
+
+  /* =============================================
+     Base
+     ============================================= */
+  html, body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Remove intro animations */
+  .masthead,
+  .page__footer,
+  #main,
+  .page,
+  .page__hero,
+  .page__hero--overlay {
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+
+  /* =============================================
+     Masthead / Navigation
+     ============================================= */
+  .masthead {
+    background-color: var(--nav-bg) !important;
+    border-bottom: 1px solid var(--border) !important;
+    box-shadow: none !important;
+  }
+
+  .masthead__inner-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.85rem 1.5rem !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    float: none !important;
+    width: auto !important;
+  }
+
+  /* Site name (left branding) */
+  .site-logo {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .site-logo:hover {
+    color: var(--nav-hover) !important;
+    text-decoration: none !important;
+  }
+
+  /* Nav wrapper (right side) */
+  .masthead__menu {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .greedy-nav {
+    background: var(--nav-bg) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    min-width: unset !important;
+    position: relative;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .greedy-nav .visible-links li {
+    display: flex !important;
+    align-items: center !important;
+    vertical-align: unset !important;
+    font-weight: unset !important;
+  }
+
+  .greedy-nav .visible-links li:first-child a {
+    margin-left: 0 !important;
+  }
+
+  .greedy-nav .visible-links li:last-child a {
+    margin-right: 0 !important;
+  }
+
+  .greedy-nav a {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0.35rem 0.8rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    border-radius: 4px;
+    transition: color 0.15s ease !important;
+  }
+
+  .greedy-nav a:hover {
+    color: var(--nav-hover) !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+
+  /* Remove sliding underline decoration */
+  .greedy-nav .visible-links a::before {
+    display: none !important;
+  }
+
+  /* Hamburger button (mobile overflow) */
+  .greedy-nav > button {
+    position: static !important;
+    height: auto !important;
+    padding: 0.35rem 0.6rem !important;
+    background: transparent !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 4px !important;
+    color: var(--nav-text) !important;
+    cursor: pointer;
+  }
+
+  .navicon {
+    background: var(--nav-text) !important;
+  }
+
+  /* Overflow dropdown */
+  .greedy-nav .hidden-links {
+    background: var(--nav-bg) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 6px;
+  }
+
+  .greedy-nav .hidden-links a {
+    color: var(--nav-text) !important;
+  }
+
+  .greedy-nav .hidden-links a:hover {
+    background: var(--surface) !important;
+    color: var(--nav-hover) !important;
+  }
+
+  .greedy-nav .hidden-links li {
+    border-bottom-color: var(--border) !important;
+  }
+
+  .greedy-nav .hidden-links::before {
+    border-color: var(--border) transparent !important;
+  }
+
+  .greedy-nav .hidden-links::after {
+    border-color: var(--nav-bg) transparent !important;
+  }
+
+  /* =============================================
+     Dark / Light Toggle Button
+     ============================================= */
+  .theme-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-left: 0.75rem !important;
+    flex-shrink: 0 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 50% !important;
+    background: var(--toggle-bg) !important;
+    color: var(--toggle-fg) !important;
+    cursor: pointer !important;
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+    box-shadow: none !important;
+    transition: background 0.15s ease, border-color 0.15s ease !important;
+    padding: 0 !important;
+  }
+
+  .theme-toggle:hover {
+    background: var(--border) !important;
+  }
+
+  .theme-toggle:focus {
+    outline: 2px solid var(--nav-text);
+    outline-offset: 2px;
+  }
+
+  /* =============================================
+     Main content area
+     ============================================= */
+  #main {
+    margin-top: 2.5rem !important;
+  }
+
+  /* =============================================
+     Sidebar / Author profile
+     ============================================= */
+  .sidebar {
+    background: transparent !important;
+  }
+
+  .author__avatar img {
+    border-color: var(--border) !important;
+    box-shadow: none !important;
+  }
+
+  .author__name {
+    color: var(--text) !important;
+  }
+
+  .author__bio {
+    color: var(--text-muted) !important;
+  }
+
+  .author__urls-wrapper button {
+    background: transparent !important;
+    border: 1px solid var(--border) !important;
+    color: var(--nav-text) !important;
+    box-shadow: none !important;
+  }
+
+  .author__urls {
+    background: var(--bg) !important;
+    border-color: var(--border) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .author__urls::before {
+    border-color: var(--border) transparent !important;
+  }
+
+  .author__urls::after {
+    border-color: var(--bg) transparent !important;
+  }
+
+  .author__urls a,
+  .author__urls li {
+    color: var(--text) !important;
+  }
+
+  .author__urls a:hover {
+    color: var(--link-hover) !important;
+  }
+
+  /* =============================================
+     Typography & links
+     ============================================= */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text) !important;
+  }
+
+  p, li, td, th, dt, dd {
+    color: var(--text) !important;
+  }
+
+  a {
+    color: var(--link) !important;
+  }
+
+  a:hover {
+    color: var(--link-hover) !important;
+  }
+
+  .page__content a {
+    color: var(--link) !important;
+  }
+
+  .page__content a:hover {
+    color: var(--link-hover) !important;
+  }
+
+  .page__content h2 {
+    border-bottom-color: var(--border) !important;
+  }
+
+  blockquote {
+    border-left-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  hr {
+    border-top-color: var(--border) !important;
+  }
+
+  abbr[title],
+  abbr[data-original-title] {
+    border-bottom-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  figcaption {
+    color: var(--text-muted) !important;
+  }
+
+  figcaption a {
+    border-bottom-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  /* =============================================
+     Code
+     ============================================= */
+  p > code,
+  a > code,
+  li > code,
+  figcaption > code,
+  td > code {
+    background: var(--code-bg) !important;
+    border-color: var(--border) !important;
+    box-shadow: none !important;
+    color: var(--text) !important;
+  }
+
+  pre {
+    background: var(--code-bg) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  /* =============================================
+     Tables
+     ============================================= */
+  table {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+  }
+
+  thead {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+  }
+
+  th, td {
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  tbody tr:hover {
+    background: var(--surface) !important;
+  }
+
+  /* =============================================
+     Archive / post lists
+     ============================================= */
+  .archive__item-title a {
+    color: var(--text) !important;
+    text-decoration: none !important;
+  }
+
+  .archive__item-title a:hover {
+    color: var(--link-hover) !important;
+    text-decoration: underline !important;
+  }
+
+  .archive__item-excerpt {
+    color: var(--text-muted) !important;
+  }
+
+  /* =============================================
+     TOC
+     ============================================= */
+  .toc {
+    background-color: var(--surface) !important;
+    border-color: var(--border) !important;
+    box-shadow: none !important;
+  }
+
+  .toc .nav__title {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+  }
+
+  .toc__menu a {
+    border-bottom-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  .toc__menu a:hover {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+  }
+
+  /* =============================================
+     Navigation sidebar list
+     ============================================= */
+  .nav__list a {
+    color: var(--text) !important;
+  }
+
+  .nav__list .active {
+    background: var(--text) !important;
+    color: var(--bg) !important;
+  }
+
+  .nav__sub-title {
+    border-bottom-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  /* =============================================
+     Pagination
+     ============================================= */
+  .pagination a,
+  .pagination--pager {
+    border-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  .pagination a:hover,
+  .pagination--pager:hover {
+    color: var(--link-hover) !important;
+  }
+
+  .pagination a.current {
+    background: var(--text) !important;
+    border-color: var(--text) !important;
+    color: var(--bg) !important;
+  }
+
+  /* =============================================
+     Buttons
+     ============================================= */
+  .btn {
+    box-shadow: none !important;
+  }
+
+  .btn--inverse {
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+    background: transparent !important;
+  }
+
+  .btn--inverse:hover {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+  }
+
+  /* =============================================
+     Footer
+     ============================================= */
+  .page__footer {
+    background-color: var(--footer-bg) !important;
+    border-top-color: var(--border) !important;
+    color: var(--text-muted) !important;
+  }
+
+  .page__footer a {
+    color: var(--text-muted) !important;
+  }
+
+  .page__footer a:hover {
+    color: var(--text) !important;
+  }
+
+  .page__footer .fas,
+  .page__footer .fab,
+  .page__footer .far,
+  .page__footer .fal {
+    color: var(--text-muted) !important;
+  }
+
+  /* =============================================
+     Page meta / taxonomy
+     ============================================= */
+  .page__meta {
+    color: var(--text-muted) !important;
+  }
+
+  .page__taxonomy-item {
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  .page__taxonomy-item:hover {
+    color: var(--link-hover) !important;
+  }
+
+  /* =============================================
+     Breadcrumbs
+     ============================================= */
+  .breadcrumbs a {
+    color: var(--text-muted) !important;
+  }
+
+  .breadcrumbs .current {
+    color: var(--text) !important;
+  }
+
+  /* =============================================
+     Forms
+     ============================================= */
+  input, textarea, select {
+    background: var(--surface) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+</style>
+
+<!-- Dark mode toggle logic -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    function getTheme() {
+      return document.documentElement.getAttribute('data-theme') || 'light';
+    }
+
+    function applyIcon(theme) {
+      toggle.innerHTML = theme === 'dark' ? '&#9728;' : '&#9790;';
+      toggle.setAttribute(
+        'aria-label',
+        theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+      );
+    }
+
+    applyIcon(getTheme());
+
+    toggle.addEventListener('click', function () {
+      var next = getTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      applyIcon(next);
+    });
+  });
+</script>
+
 <!-- end custom head snippets -->

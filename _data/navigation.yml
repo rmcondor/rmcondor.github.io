@@ -1,19 +1,13 @@
-# main links links
+# main links
 main:
+  - title: "Home"
+    url: /
+
   - title: "Research"
     url: /research/
 
-  - title: "Talks"
-    url: /talks/    
-
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Resources"
-    url: /resources/
+    url: /teaching/
 
-  - title: "Blog Posts"
+  - title: "Personal"
     url: /blogposts/
-    
-  - title: "CV"
-    url: /cv/
