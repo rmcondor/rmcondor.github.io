@@ -91,6 +91,49 @@
     background-color: var(--bg) !important;
     color: var(--text) !important;
     transition: background-color 0.2s ease, color 0.2s ease;
+    /* Remove sticky-footer bottom padding since footer is removed */
+    padding-bottom: 0 !important;
+  }
+
+  /* =============================================
+     Abstract collapsible (details / summary)
+     ============================================= */
+  details {
+    margin: 0.4rem 0 0.75rem;
+  }
+
+  details summary {
+    display: inline-block;
+    padding: 0.15rem 0.65rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid var(--border) !important;
+    border-radius: 3px;
+    background: transparent !important;
+    color: var(--text-muted) !important;
+    cursor: pointer;
+    list-style: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+
+  details summary::-webkit-details-marker { display: none; }
+  details summary::marker { display: none; }
+
+  details[open] summary,
+  details summary:hover {
+    color: var(--text) !important;
+    background: var(--surface) !important;
+  }
+
+  details p {
+    margin: 0.5rem 0 0 !important;
+    padding: 0.7rem 1rem !important;
+    border-left: 2px solid var(--border) !important;
+    color: var(--text-muted) !important;
+    font-size: 0.95em !important;
+    line-height: 1.65 !important;
   }
 
   /* Remove intro animations */
