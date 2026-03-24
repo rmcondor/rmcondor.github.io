@@ -59,7 +59,7 @@ It is often believed that the ultimate purpose of economics is to forecast varia
 
 The causal propositions derived from a theory can be expressed in a simplified form. Suppose:
 
-<br/><img src='/images/metodologia_formula.png'>
+*Y* = f( X₁(+), X₂(+), X₃(−) )
 
 Variable *Y* depends directly on *X*₁ and *X*₂ but inversely on *X*₃. The interaction of these three variables in the model can predict the behavior of *Y* but cannot forecast its exact value. An economic theory cannot determine the value of the endogenous variable in the future because the theory itself does not determine the values of the exogenous variables; rather, these draw on information from the past. In many cases, the challenge for econometricians will be to draw on a theory that illuminates the most relevant and determinant variables to incorporate into their model. Once again, the role that theory plays becomes all the more evident.
 
