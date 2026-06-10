@@ -19,6 +19,7 @@ You can contact me at [rmcondorit@gmail.com](mailto:rmcondorit@gmail.com)
 
 * In August 2026, I will participate in the [IGS North South Summer School](https://www.igs-north-south.ch/courses/summer-school/) of University of Bern (Puerto Maldonado, Perú)
 * In July 2026, I will present the paper "Understanding Artisanal Mining" at the Annual Meeting of the Peruvian Economic Association (APE) at Universidad del Pacífico (Lima, Perú)
+* In July 2026, I will participate in an internal workshop in econophysics at Universidad Nacional de Colombia (Bogotá, Colombia)
 * On March 10th, I participated in a seminar at the Peruvian Central Bank (Lima, Perú)
 * On March 5th, I presented at Universidad de Los Andes (Bogotá, Colombia)
 * On January 15th, I presented at the Bogotá Experimental Economics Conference (Bogotá, Colombia)
