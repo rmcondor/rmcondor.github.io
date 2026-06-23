@@ -38,8 +38,8 @@ Development economics · Political economy · Environmental policy · Field expe
 
 ## Other publications
 
-**Inner Dimensions, Outer Change: How Can Artisanal and Small-Scale Gold Mining Leaders Enable Responsible Mining in the Peruvian Amazon?** (with Kattia Diaz-Ydones)
-R&R, Extractive Industries and Society
+**Inner Dimensions, Outer Change: Exploring the Transformative Potential of Leadership in Artisanal and Small-Scale Gold Mining in the Peruvian Amazon** (with Kattia Diaz-Ydones, Fernando Fernandez, Clara L. Diebold, Jan Göpel, Sarah-Lan Mathez-Stiefel, Dominique Schmid, Armando Valdés-Velásquez, Arne Weiss, Gabriela Wiederkehr-Guerra, and Julie G. Zaehringer)
+[The Extractive Industries and Society | Vol. 28, 101994 (2026)](https://doi.org/10.1016/j.exis.2026.101994)
 
 <details>
 <summary>Abstract</summary>
